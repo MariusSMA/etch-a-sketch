@@ -55,8 +55,7 @@ function updateRangeValue(value) {
 }
 
 function updateRangeBackground(range) {
-	const percentage =
-		((range.value - range.min) / (range.max - range.min)) * 100;
+	const percentage = (range.value / range.max) * 100;
 	range.style.background = `linear-gradient(90deg, #202124 ${percentage}%, #fff ${percentage}%)`;
 }
 
