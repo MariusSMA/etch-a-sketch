@@ -30,8 +30,8 @@
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: url("/assets/fonts/montserrat-regular-webfont.woff2") format("woff2"),
-		url("/assets/fonts/montserrat-regular-webfont.woff") format("woff");
+	src: url("./assets/fonts/montserrat-regular-webfont.woff2") format("woff2"),
+		url("./assets/fonts/montserrat-regular-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -39,8 +39,8 @@
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
-	src: url("/assets/fonts/montserrat-bold-webfont.woff2") format("woff2"),
-		url("/assets/fonts/montserrat-bold-webfont.woff") format("woff");
+	src: url("./assets/fonts/montserrat-bold-webfont.woff2") format("woff2"),
+		url("./assets/fonts/montserrat-bold-webfont.woff") format("woff");
 }
 
 /* Mobile Layout */
