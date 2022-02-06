@@ -5,7 +5,7 @@ This is a solution to the [TOP (The Odin Project)](https://www.theodinproject.co
 ## Table of contents
 
 - [Overview](#overview)
-    - [Disclaimer](#disclaimer)
+    - [Attribution](#disclaimer)
     - [The challenge](#the-challenge)
     - [Links](#links)
 - [My process](#my-process)
@@ -15,9 +15,11 @@ This is a solution to the [TOP (The Odin Project)](https://www.theodinproject.co
 
 ## Overview
 
-### Disclaimer
+### Attribution
 
-The design and some JavaScript functionality was inspired by [Michael](https://github.com/michalosman)'s project, which really helped me grasp JS better.
+- The design and some JavaScript functionality was inspired by [Michael](https://github.com/michalosman)'s project, which really helped me grasp JS better.
+
+- The favicon was taken from [Freepik](https://www.flaticon.com/free-icons/pen)
 
 ### The challenge
 
