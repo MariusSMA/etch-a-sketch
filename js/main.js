@@ -77,7 +77,7 @@ function setupGrid(gridSize) {
 		const gridElement = document.createElement("div");
 		gridElement.classList.add("grid-element");
 		gridElement.addEventListener("mouseover", e => changeColor(e));
-		gridElement.addEventListener("touchstart", e => changeColor(e));
+		gridElement.addEventListener("mousedown", e => changeColor(e));
 		grid.appendChild(gridElement);
 	}
 }

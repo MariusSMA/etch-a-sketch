@@ -9,6 +9,40 @@
 	font-family: "Montserrat", sans-serif;
 }
 
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}
+
+/* Font Import */
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/assets/fonts/montserrat-regular-webfont.woff2") format("woff2"),
+		url("/assets/fonts/montserrat-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("/assets/fonts/montserrat-bold-webfont.woff2") format("woff2"),
+		url("/assets/fonts/montserrat-bold-webfont.woff") format("woff");
+}
+
 /* Mobile Layout */
 
 body {
@@ -44,8 +78,8 @@ main .container {
 
 .grid {
 	display: grid;
-	width: 15.5rem;
-	height: 15.5rem;
+	width: 248px;
+	height: 248px;
 	grid-template-columns: repeat(16, 1fr);
 	grid-template-rows: repeat(16, 1fr);
 	box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15);
@@ -63,10 +97,15 @@ main .container {
 	gap: 1.5em;
 }
 
+.color-picker-wrapper {
+	width: 48px;
+	height: 48px;
+}
+
 #color-picker {
 	background: none;
-	width: 3rem;
-	height: 3rem;
+	width: 48px;
+	height: 48px;
 	border: none;
 	cursor: pointer;
 }
@@ -93,7 +132,8 @@ main .container {
 }
 
 .btn {
-	width: 5.9375rem;
+	width: 95px;
+	height: 28px;
 	font-size: 1em;
 	padding: 0.2815em;
 	border: none;
@@ -158,4 +198,149 @@ footer {
 
 .footer-text-link:hover {
 	text-decoration: underline;
+}
+
+/* Medium Mobile Layout */
+
+@media (min-width: 375px) {
+	.header-title {
+		font-size: 2.25em;
+	}
+
+	main .container,
+	.menu {
+		gap: 1.75em;
+	}
+
+	.grid {
+		width: 312px;
+		height: 312px;
+	}
+
+	#color-picker {
+		width: 60px;
+		height: 60px;
+	}
+
+	.btn {
+		width: 105px;
+		height: 32px;
+		font-size: 1.125em;
+	}
+
+	#range {
+		max-width: none;
+		width: 148px;
+		height: 8px;
+	}
+
+	#range::-webkit-slider-thumb {
+		width: 1.125rem;
+		height: 1.125rem;
+	}
+}
+
+/* Tablet Layout */
+
+@media (min-width: 768px) {
+	.header-title {
+		font-size: 3em;
+	}
+
+	main .container,
+	.menu {
+		gap: 2em;
+	}
+
+	.grid {
+		width: 512px;
+		height: 512px;
+	}
+
+	#color-picker {
+		width: 72px;
+		height: 72px;
+	}
+
+	.btn {
+		width: 124px;
+		height: 36px;
+		font-size: 1.25em;
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	#range {
+		width: 162px;
+		height: 10px;
+	}
+
+	#range::-webkit-slider-thumb {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
+}
+
+/* Small Desktop Layout */
+
+@media (min-width: 1366px) {
+	.header-title {
+		font-size: 4em;
+	}
+
+	main .container {
+		flex-direction: row;
+		gap: 6rem;
+	}
+
+	.grid {
+		width: 512px;
+		height: 512px;
+		order: 1;
+	}
+
+	.menu {
+		justify-content: center;
+	}
+
+	.btn-group {
+		flex-direction: column;
+		gap: 2em;
+	}
+
+	footer {
+		margin-bottom: 0.5em;
+	}
+
+	.footer-text {
+		font-size: 1.125em;
+	}
+}
+
+/* Medium Desktop Layout */
+
+@media (min-width: 1920px) {
+	.header-title {
+		font-size: 4.5em;
+	}
+
+	main .container {
+		flex-direction: row;
+		gap: 7rem;
+	}
+
+	.grid {
+		width: 712px;
+		height: 712px;
+		order: 1;
+	}
+
+	.menu {
+		justify-content: center;
+		gap: 2.25em;
+	}
+
+	.btn-group {
+		flex-direction: column;
+		gap: 2.25em;
+	}
 }
